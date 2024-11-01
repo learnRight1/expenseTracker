@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Expense</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Add Expense</h1>
+      <form id="addExpenseForm">
+        <input type="number" id="amount" placeholder="Amount" required />
+        <input type="date" id="date" required />
+        <input
+          type="text"
+          id="description"
+          placeholder="Description"
+          required
+        />
+        <select id="category" required>
+          <option>Select Category</option>
+          <!-- Dynamic options will be inserted here -->
+        </select>
+        <select id="paymentMethod" required>
+          <option>Select Payment Method</option>
+          <!-- Dynamic options will be inserted here -->
+        </select>
+        <button type="submit">Add Expense</button>
+      </form>
+    </div>
+    <script src="../js/add_expense.js"></script>
+  </body>
+</html>

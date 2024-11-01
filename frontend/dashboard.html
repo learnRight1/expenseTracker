@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>Dashboard</h2>
+      <nav>
+        <a href="dashboard.html">Home</a>
+        <a href="pages/add_expense.html">Add Expense</a>
+        <a href="pages/view_expenses.html">View Expenses</a>
+        <a href="pages/add_category.html">Categories</a>
+        <a href="pages/add_budget.html">Budgets</a>
+        <a href="pages/add_payment_method.html">Payment Methods</a>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <h1>Welcome to Your Dashboard</h1>
+      <div class="dashboard-cards">
+        <div class="card">Total Expenses: $0</div>
+        <div class="card">Budget Used: $0</div>
+        <div class="card">Remaining Budget: $0</div>
+      </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+
+    <!-- Inside dashboard.html -->
+    <canvas id="expenseChart" width="400" height="200"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
